@@ -1,0 +1,35 @@
+<!-- INCIDENT HUB -->
+<div style="border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;background:rgba(0,0,0,.18);">
+  <div style="font-weight:900;">커맨드</div>
+  <div style="margin-top:6px;font-size:12.5px;line-height:1.7;color:rgba(231,238,252,.85);">
+    !이벤트 / !종료
+  </div>
+</div>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;align-items:flex-start;">
+
+  <div style="flex:1 1 320px;border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;background:rgba(0,0,0,.18);">
+    <div style="padding:10px;font-weight:900;border-bottom:1px solid rgba(255,255,255,.10);">지도 / 레이어</div>
+    <div style="position:relative;height:210px;background:#0b0f16;">
+      <div style="position:absolute;inset:0;background:url('../assets/map_base.png') no-repeat center/cover;opacity:.92;"></div>
+      <div style="position:absolute;inset:0;background:url('../assets/overlay_resonance.png') no-repeat center/cover;opacity:.92;"></div>
+      <div style="position:absolute;left:10px;top:10px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.15);padding:6px 10px;border-radius:999px;font-size:12px;">
+        [시간: HH:MM]
+      </div>
+      <div style="position:absolute;left:10px;top:46px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.15);padding:6px 10px;border-radius:999px;font-size:12px;overflow-wrap:anywhere;word-break:keep-all;">
+        [위치: 사건 발생 위치명 / 루시드층계: 공명지대]
+      </div>
+    </div>
+  </div>
+
+  <div style="flex:1 1 320px;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;background:rgba(0,0,0,.18);overflow-wrap:anywhere;word-break:keep-all;">
+    <div style="font-weight:900;">사건 요약</div>
+    <div style="margin-top:8px;font-size:12.8px;line-height:1.85;color:rgba(231,238,252,.85);">
+      <div><span style="color:rgba(231,238,252,.65);">사건:</span> 열이상사건</div>
+      <div><span style="color:rgba(231,238,252,.65);">현상:</span> (2~3줄)</div>
+      <div><span style="color:rgba(231,238,252,.65);">위험:</span> (LOW/MID/HIGH)</div>
+      <div><span style="color:rgba(231,238,252,.65);">목표:</span> (PC 목표 1~2줄)</div>
+    </div>
+  </div>
+
+</div>
