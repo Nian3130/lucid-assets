@@ -8,8 +8,11 @@
 ### incidents
 - 사건개요
 
-### golssary
+### glossary
 - 루시드의 용어 모음
 
 ### templates
 - html 탬플릿
+
+### note
+- 아이디어노트
