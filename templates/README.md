@@ -3,7 +3,7 @@
 이 폴더는 **재사용 가능한 HTML 템플릿**을 보관합니다.  
 (캐릭터 카드, 사건 허브, 지도/레이어 UI 등)
 
-Pages 경로:
+Pages 경로:  
 https://nian3130.github.io/lucid-assets/templates/
 
 ---
@@ -13,6 +13,7 @@ https://nian3130.github.io/lucid-assets/templates/
 - 케이브덕(모바일/접기 강제)을 기준으로 설계합니다.
 - 기본은 **인라인 스타일 중심**으로 유지합니다.
 - 템플릿은 “복사 → 값만 교체 → 배포”를 목표로 합니다.
+- **원본 텍스트(로어)는 .md**로 보관하고, HTML은 필요 시 가공본으로 생성합니다.
 
 ---
 
@@ -40,14 +41,15 @@ https://nian3130.github.io/lucid-assets/templates/character_card.html
 템플릿은 아래 항목만 바꾸면 동작하도록 구성합니다.
 
 ### (A) 이미지 URL
-이미지는 assets에서 불러옵니다.
+이미지는 **characters/<name>/assets**에서 불러옵니다.
 
 기본 규칙)
-https://nian3130.github.io/lucid-assets/assets/<path>/<file>
+https://nian3130.github.io/lucid-assets/characters/<character>/assets/<file>
 
 예시)
-- https://nian3130.github.io/lucid-assets/assets/raven/raven_01.png
-- https://nian3130.github.io/lucid-assets/assets/maps/map_base_01.png
+- https://nian3130.github.io/lucid-assets/characters/raven/assets/raven_01.png
+
+> ⚠️ 예전 `/assets/...` 경로는 현재 구조에서는 사용하지 않습니다.
 
 ### (B) 텍스트 블록
 - 제목(캐릭터명/사건명)
@@ -72,6 +74,8 @@ https://nian3130.github.io/lucid-assets/assets/<path>/<file>
 - 블록 여백: 12~18px 단위
 - 긴 내용은 `overflow-y:auto` 박스 또는 접기(accordion) 사용
 
+> 그러나 뉴비라서 잘 못함. ChatGpt한테 검수 받고 있음.
+
 ---
 
 ## 5) 템플릿 사용 흐름(권장)
@@ -83,6 +87,10 @@ https://nian3130.github.io/lucid-assets/assets/<path>/<file>
 3) 이미지/텍스트 “값 교체 포인트”만 수정
 4) Pages에서 미리보기로 확인
 5) 케이브덕에 최종 반영
+
+추가 원칙)
+- **캐릭터/사건 원본 로어는 .md로만 관리**합니다.
+- HTML은 “배포/표시용 가공본”으로 보고, 원문 수정은 .md에서 합니다.
 
 ---
 
@@ -109,3 +117,10 @@ https://nian3130.github.io/lucid-assets/assets/<path>/<file>
 - [ ] 핵심 정보(명령어/위치/요약)가 상단에서 바로 보이는가?
 - [ ] 텍스트가 너무 길면 스크롤 박스/접기를 적용했는가?
 - [ ] 파일명/경로가 소문자/언더스코어 규칙을 지켰는가?
+- [ ] (권장) 원본 로어는 .md에 남기고, HTML은 가공본으로 유지했는가?
+
+---
+
+# 캐릭터 원본 .md 템플릿 (KO / EN / CAVEDUCK)
+
+- 별도의 파일에서 확인요망.
