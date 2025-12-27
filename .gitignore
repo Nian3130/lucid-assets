@@ -1,12 +1,12 @@
-
-# Local backups
+# Local backups / drafts
 _local_backup/
+_drafts/
 
-# Patch files
-*.patch
-
-# Local notes
+# Work logs / daily notes
 note/Daily Notes/
 
-# Local backups (do not track)
-_local_backup/
+# Patch/temp files
+*.patch
+*.tmp
+*.bak
+.DS_Store
