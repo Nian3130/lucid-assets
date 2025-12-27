@@ -1,0 +1,7 @@
+
+# Local backups
+_local_backup/
+
+# Patch files
+*.patch
+
