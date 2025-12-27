@@ -8,3 +8,5 @@ _local_backup/
 # Local notes
 note/Daily Notes/
 
+# Local backups (do not track)
+_local_backup/
