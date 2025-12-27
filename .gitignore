@@ -5,3 +5,6 @@ _local_backup/
 # Patch files
 *.patch
 
+# Local notes
+note/Daily Notes/
+
